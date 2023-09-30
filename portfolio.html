@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="C:\Users\orange\Desktop\Yasmeen\html\Portfolio\portfolio.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div id="header">
+     <div class="container">
+        <nav> 
+            <img src="c:\Users\orange\Pictures\Project Pictures\Yasmeen.jpg" class="logo" alt="logo">
+            <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#qualifications">Qualifications</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact">Contact Information</a></li>
+            <li><a href="#key-strengths">Key Strengths</a></li>
+        </ul>
+        </nav>
+        <div class="header-text">
+            <p>WEB DEVELEOPER</p>
+            <h1>Hi, I'm <span>Yasmeen</span> Almoumani <br>
+                from Amman, Jordan. 
+                <br><br>
+           <span>Welcome to my portfolio!</span> </h1>
+        </div>
+    </div>
+</div>
+<!-- about me -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+               <img src="c:\Users\orange\Pictures\Project Pictures\aboutme.jpg">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Yasmeen Almoumani, I am a passionate web developer located in Jordan in passionate for code and bringing the next best projects</p>
+           
+           <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('qualifications')">Qualifications</p>
+           </div>
+         
+           <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>Java</span><br>Designing databases.</li>
+                <li><span>Python</span><br>Creating programs in python.</li>
+                <li><span>HTML</span><br>Formatting websites.</li>
+                <li><span>CSS</span><br>Styling websites</li>
+            </ul>
+          <div class="tab-contents active-tab" id="experience">
+            <ul>
+                <li><span>Orange Code Academy (September 2023 -)</span><br>Training for web development.</li>
+            </ul>
+
+          <div class="tab-contents active-tab" id="qualifications">
+            <ul>
+                <li><span>Arab Open University (2020 - Present)</span><br>BsC in IT/Network and Security</li>
+            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tablink.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+        }
+        
+    </script>
+<!-- portfolio -->
+
+       </div>
+    </div>
+</div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title" id="projects"> My Projects</h1>
+       <div class="projects-list">
+        <div class="projects">
+            <img src="c:\Users\orange\Pictures\Project Pictures\000.png" alt="">
+            <div class="layer">
+                <h3>Grocery Store Website</h3>
+                <p>A front-end project done through CSS and HTML of a grocery store's website.</p>
+                <a href="#"><i class="ri-link"></i></a>
+            </div>
+            </div>
+        <div class="projects">
+            <img src="c:\Users\orange\Pictures\Project Pictures\55.png" alt="">
+            <div class="layer">
+                <h3>Review System</h3>
+                <p>A front-end project done through CSS and HTML of a review system. </p>
+                <a href="#"><i class="ri-link"></i></a>
+            </div>
+        </div>
+        <div class="projects">
+            <img src="c:\Users\orange\Pictures\Project Pictures\5.png" alt="">
+            <div class="layer">
+                <h3>Basic Calculator</h3>
+                <p>A front-end project done through CSS and HTML of a basic calculator.</p>
+                <a href="#"><i class="ri-link"></i></a>
+        </div>
+        </div> 
+    </div>
+<div  id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Information</h1>
+                <p><i class="ri-phone-fill"></i>+962 776864979</p>
+                <p><i class="ri-mail-fill"></i>yalmoumani@gmail.com</p>
+
+                    <p><a href="https://www.linkedin.com/in/yasmeen-almoumani-544a35214/" target="_blank">Linkedin</a>
+                    </p>
+                    <p><a href="https://github.com/yalmoumani" target="_blank"> Github</a>
+                    </p> 
+        </div>
+        
+      
+
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<footer></footer>
+<div id="key-strengths">
+ <div class="container">
+    <h3 class="sub-title">Key Strengths</h3>
+    <p>Some of my key strengths are within creativity, group work,<br> time management, front-end coding, back-end coding, and CCNA.</p>
+ </div>
+</div>
+    
+
+    </footer>
+
+</body>
+</html>
